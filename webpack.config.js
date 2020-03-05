@@ -37,7 +37,6 @@
 const HtmlPlugin = require('html-webpack-plugin')
 const CleanPlugin = require('clean-webpack-plugin')
 const MiniCssPlugin = require('mini-css-extract-plugin')
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     mode: 'production',
@@ -60,7 +59,6 @@ module.exports = {
         new CleanPlugin('dist'),
         new HtmlPlugin(),
         new MiniCssPlugin(),
-        new VueLoaderPlugin()
     ]
 }
 
