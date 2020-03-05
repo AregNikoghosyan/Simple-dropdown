@@ -35,7 +35,6 @@
 // }
 
 const HtmlPlugin = require('html-webpack-plugin')
-const CleanPlugin = require('clean-webpack-plugin')
 const MiniCssPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
@@ -56,7 +55,6 @@ module.exports = {
         ],
     },
     plugins: [
-        new CleanPlugin('dist'),
         new HtmlPlugin(),
         new MiniCssPlugin(),
     ]
