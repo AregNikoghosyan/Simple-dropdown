@@ -11,7 +11,7 @@ module.exports = {
     },
     plugins:[
         new ExtractTextPlugin({
-            filename: 'dropdown.scss',
+            filename: 'dropdown.css',
         }),
     ],
     module: {
@@ -21,20 +21,14 @@ module.exports = {
                 exclude: /(node_modules)/,
                 use: 'babel-loader'
             }, {
-                // test: /\.*css$/,
-                // use : ExtractTextPlugin.extract({
-                //     fallback : 'style-loader',
-                //     use : [
-                //         'css-loader',
-                //         'sass-loader'
-                //     ]
-                // }),
-                loaders: [
-                    {
-                      test: /\.scss$/,
-                      loaders: ['style', 'css', 'sass']
-                    }
-                  ]
+                test: /\.*css$/,
+                use : ExtractTextPlugin.extract({
+                    fallback : 'style-loader',
+                    use : [
+                        'css-loader',
+                        'sass-loader'
+                    ]
+                }),
                },
         ]
     }
