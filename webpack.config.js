@@ -14,7 +14,16 @@ module.exports = {
                 test: /\.jsx?$/,
                 exclude: /(node_modules)/,
                 use: 'babel-loader'
-            }
+            }, {
+                test: /\.*css$/,
+                use : ExtractTextPlugin.extract({
+                    fallback : 'style-loader',
+                    use : [
+                        'css-loader',
+                        'sass-loader'
+                    ]
+                })
+               },
         ]
     }
 }
