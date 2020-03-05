@@ -40,6 +40,7 @@ const pkg = require('./package.json');
 const path = require('path');
 const libraryName= pkg.name;
 module.exports = {
+     mode: 'production',
     entry: path.join(__dirname, "./src/components/Dropdown.jsx"),
     output: {
         path: path.join(__dirname, './build'),
