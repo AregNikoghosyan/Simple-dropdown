@@ -50,7 +50,7 @@ module.exports = {
                 use: 'babel-loader'
             },
             {
-                test: /\.scss$/,
+                test: /\.css$/,
                 //use: ['style-loader', 'css-loader', 'sass-loader']
                 use: [MiniCssPlugin.loader, 'css-loader', 'sass-loader'],
             },
