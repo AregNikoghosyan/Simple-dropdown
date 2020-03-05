@@ -73,16 +73,16 @@ class DropDown extends React.Component {
     const { list, placeholder } = this.props;
     const { selectedItem, isOpen } = this.state;
     return (
-      <div className="S-drop-down">
+      <div className="ABM-drop-down">
         <ClickOutside onClickOutside={this.closeDropDown}>
-          <div className="S-drop-down-component">
-            <div className="S-drop-down-title" onClick={this.toggleDropDown}>
+          <div className="ABM-drop-down-component">
+            <div className="ABM-drop-down-title" onClick={this.toggleDropDown}>
               <p className={!selectedItem ? '' : 'placeholder'}>{(selectedItem && selectedItem.name) || placeholder}</p>
               <span className={`icon-down ${isOpen ? 'icon-arrow_up_1' : 'icon-arrow_down_1'}`} />
             </div>
-            <div className={`S-drop-down-options ${isOpen ? '' : 'S-dropdown-hide'}`} style={{ height: `${this.state.height}px` }}>
+            <div className={`ABM-drop-down-options ${isOpen ? '' : 'ABM-dropdown-hide'}`} style={{ height: `${this.state.height}px` }}>
               {list.map((item) =>
-                <div className={`S-drop-down-option ${this.checkIsSelected(item) ? 'selected' : ''}`} key={item.value} onClick={() => this.onSelect(item)}>{item.name}</div>
+                <div className={`ABM-drop-down-option ${this.checkIsSelected(item) ? 'selected' : ''}`} key={item.value} onClick={() => this.onSelect(item)}>{item.name}</div>
               )}
             </div>
           </div>
