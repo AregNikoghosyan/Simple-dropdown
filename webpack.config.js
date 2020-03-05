@@ -43,7 +43,7 @@ module.exports = {
     entry: path.join(__dirname, "./src/components/Dropdown.jsx"),
     output: {
         path: path.join(__dirname, './build'),
-        filename: 'myUnflappableComponent.js',
+        filename: 'Dropdown.js',
         library: libraryName,
         libraryTarget: 'umd',
         publicPath: '/build/',
