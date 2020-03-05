@@ -1,4 +1,5 @@
 var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -8,6 +9,11 @@ module.exports = {
         filename: 'Dropdown.js',
         libraryTarget: 'commonjs2'
     },
+    plugins:[
+        new ExtractTextPlugin({
+            filename: 'dropdown.css',
+        }),
+    ],
     module: {
         rules: [
             {
