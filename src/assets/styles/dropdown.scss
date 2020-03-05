@@ -1,0 +1,60 @@
+.S-drop-down {
+  width : 200px;
+
+  .S-drop-down-component,
+  .S-drop-down-title {
+    height  : 100%;
+    border  : 0;
+    color   : black;
+    padding : 0 20px;
+  }
+
+  .S-drop-down-title {
+    border          : 1px solid gray;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    p {
+      width         : calc(100% - 50px);
+      overflow      : hidden;
+      text-overflow : ellipsis;
+      white-space   : nowrap;
+    }
+  }
+
+  .S-drop-down-component {
+    padding : 8px 0;
+  }
+
+  .S-drop-down-title,
+  .S-drop-down-title p {
+    color  : black;
+    cursor : pointer;
+  }
+
+  .S-dropdown span {
+    display : block;
+  }
+
+  .S-dropdown-hide {
+    display : none;
+  }
+
+  .S-drop-down-options {
+    border       : 1px solid gray;
+    border-top   : 0;
+    color        : black;
+    cursor       : pointer;
+    padding-left : 20px;
+
+    .S-drop-down-options.Open {
+      padding       : 5px 20px;
+      margin-bottom : 50px;
+    }
+
+    .S-drop-down-option.selected {
+      color       : black;
+      font-weight : bold;
+    }
+  }
+}
