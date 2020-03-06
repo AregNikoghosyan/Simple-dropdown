@@ -11,7 +11,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'style.css',
+            filename: 'dropdown.css',
         })
     ],
     module: {
