@@ -1,6 +1,6 @@
 {
   "name": "react-abm-dropdown",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "Dropdown component for React Js",
   "main": "./lib/Dropdown.js",
   "private": false,
