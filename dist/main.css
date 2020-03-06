@@ -1,2 +1,51 @@
-.ABM-drop-down{width:200px}.ABM-drop-down-component,.ABM-drop-down-title{height:100%;border:0;color:black;padding:0 20px}.ABM-drop-down-title{border:1px solid gray;display:flex;align-items:center;justify-content:space-between}.ABM-drop-down-title>p{width:calc(100% - 50px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ABM-drop-down-component{padding:8px 0}.ABM-drop-down-title,.ABM-drop-down-title p{color:black;cursor:pointer}.ABM-dropdown>span{display:block}.ABM-dropdown-hide{display:none}.ABM-drop-down-options{border:1px solid gray;border-top:0;color:black;cursor:pointer;padding-left:20px}.ABM-drop-down-options.Open{padding:5px 20px;margin-bottom:50px}.ABM-drop-down-option.selected{color:black;font-weight:bold}
-
+.ABM-drop-down {
+  width: 200px;
+}
+.ABM-drop-down-component,
+.ABM-drop-down-title {
+  height: 100%;
+  border: 0;
+  color: black;
+  padding: 0 20px;
+}
+.ABM-drop-down-title {
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ABM-drop-down-title > p {
+  width: calc(100% - 50px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ABM-drop-down-component {
+  padding: 8px 0;
+}
+.ABM-drop-down-title,
+.ABM-drop-down-title p {
+  color: black;
+  cursor: pointer;
+}
+.ABM-dropdown > span {
+  display: block;
+}
+.ABM-dropdown-hide {
+  display: none;
+}
+.ABM-drop-down-options {
+  border: 1px solid gray;
+  border-top: 0;
+  color: black;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.ABM-drop-down-options.Open {
+  padding: 5px 20px;
+  margin-bottom: 50px;
+}
+.ABM-drop-down-option.selected {
+  color: black;
+  font-weight: bold;
+}
