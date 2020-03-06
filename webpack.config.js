@@ -10,8 +10,9 @@ module.exports = {
         libraryTarget: 'commonjs2'
     },
     plugins: [
-        // new HtmlWebpackPlugin(),
-        new ExtractTextPlugin("dropdown.css")
+        new MiniCssExtractPlugin({
+            filename: 'main.css',
+        })
     ],
     module: {
         rules: [
@@ -20,15 +21,13 @@ module.exports = {
                 exclude: /(node_modules)/,
                 use: 'babel-loader'
             }, {
-                test: /\.*css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        'css-loader',
-                        'sass-loader'
-                    ]
-                }),
-            },
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract(
+                    {
+                        fallback: 'style-loader',
+                        use: ['css-loader']
+                    })
+            }
         ]
     }
 }
