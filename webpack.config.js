@@ -1,6 +1,6 @@
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     mode: 'production',
     entry: './src/components/Dropdown.jsx',
@@ -10,9 +10,9 @@ module.exports = {
         libraryTarget: 'commonjs2'
     },
     plugins: [
-        new ExtractTextPlugin({
-            filename: './src/assets/styles/dropdown.css',
-        }),
+        new MiniCssExtractPlugin({
+            filename: 'style.css',
+        })
     ],
     module: {
         rules: [
@@ -22,11 +22,7 @@ module.exports = {
                 use: 'babel-loader'
             }, {
                 test: /\.css$/,
-                use: ExtractTextPlugin.extract(
-                    {
-                        fallback: 'style-loader',
-                        use: ['style-loader', 'css-loader']
-                    })
+                use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader']
             }
         ]
     }
