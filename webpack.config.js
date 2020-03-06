@@ -5,7 +5,7 @@ module.exports = {
     mode: 'production',
     entry: './src/components/Dropdown.jsx',
     output: {
-        path: path.resolve('lib'),
+        path: path.resolve('dist'),
         filename: 'Dropdown.js',
         libraryTarget: 'commonjs2'
     },
