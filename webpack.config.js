@@ -9,10 +9,9 @@ module.exports = {
         filename: 'Dropdown.js',
         libraryTarget: 'commonjs2'
     },
-    plugins:[
-        new ExtractTextPlugin({
-            filename: 'dropdown.css',
-        }),
+    plugins: [
+        // new HtmlWebpackPlugin(),
+        new ExtractTextPlugin("dropdown.css")
     ],
     module: {
         rules: [
@@ -22,14 +21,14 @@ module.exports = {
                 use: 'babel-loader'
             }, {
                 test: /\.*css$/,
-                use : ExtractTextPlugin.extract({
-                    fallback : 'style-loader',
-                    use : [
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: [
                         'css-loader',
                         'sass-loader'
                     ]
                 }),
-               },
+            },
         ]
     }
 }
