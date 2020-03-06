@@ -10,9 +10,9 @@ module.exports = {
         libraryTarget: 'commonjs2'
     },
     plugins: [
-        new MiniCssExtractPlugin({
+        new ExtractTextPlugin({
             filename: 'main.css',
-        })
+        }),
     ],
     module: {
         rules: [
@@ -25,7 +25,7 @@ module.exports = {
                 use: ExtractTextPlugin.extract(
                     {
                         fallback: 'style-loader',
-                        use: ['css-loader']
+                        use: ['style-loader', 'css-loader']
                     })
             }
         ]
