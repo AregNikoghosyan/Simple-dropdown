@@ -34,7 +34,7 @@ export default class ClickOutside extends React.Component {
 }
 
 
-export default class DropDown extends React.Component {
+class DropDown extends React.Component {
 
   state = {
     isOpen       : false,
@@ -92,3 +92,4 @@ export default class DropDown extends React.Component {
   }
 }
 
+export default DropDown;
