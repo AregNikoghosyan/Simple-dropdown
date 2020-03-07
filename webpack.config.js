@@ -1,6 +1,5 @@
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     mode: 'production',
     entry: './src/components/Dropdown.jsx',
