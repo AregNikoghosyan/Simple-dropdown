@@ -1,8 +1,8 @@
-## Installation
+## `Installation`
 
-$ npm i react-dropdown-simple
+`$ npm i react-dropdown-simple`
 
-@import '~react-dropdown-simple/dist/main.css';
+`@import '~react-dropdown-simple/dist/main.css';`
 
 ## Available Scripts
 
