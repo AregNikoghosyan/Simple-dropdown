@@ -1,11 +1,12 @@
 {
   "name": "react-dropdown-simple",
   "version": "0.1.4",
+  "description": "Dropdown component for React Js",
   "author": {
     "name": "Areg Nikoghosyan",
     "email": "aregnikogh@gmail.com"
   },
-  "description": "Dropdown component for React Js",
+  "keywords": ["React dropdown", "simple React dropdown"],
   "main": "./lib/Dropdown.js",
   "private": false,
   "license": "MIT",
