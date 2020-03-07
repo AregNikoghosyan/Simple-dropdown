@@ -22,13 +22,13 @@ class App extends Component {
     }
   ]
 
-  changeCategory = value => this.setState({ selectedCategory: value });
+  change = value => this.setState({ selectedCategory: value });
   
   render() {
 
     return (
       <div>
-        <DropDown placeholder="Choose" list={this.list} onSelect={this.changeCategory}></DropDown>
+        <DropDown placeholder="Choose" list={this.list} onSelect={this.change}></DropDown>
       </div>
     );
   }

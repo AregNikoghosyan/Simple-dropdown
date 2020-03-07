@@ -6,16 +6,9 @@
 
 ## Usage 
 
-options = [
-  {
-    name : 'text_1',
-    value : 1
-  },
- {
-    name : 'text_2',
-    value : 2
-  },
-]
+`options = [ {name : 'text_1',value : 1}, {name : 'text_2',value : 2}, ... ]`
+
+`change = value => this.setState({ Your_State : value });`
 
 ## Mount
 
