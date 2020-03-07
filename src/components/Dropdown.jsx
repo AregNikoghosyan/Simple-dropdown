@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class ClickOutside extends React.Component {
+class ClickOutside extends React.Component {
 
   // static propTypes = {
   //   onClickOutside: PropTypes.func.isRequired
