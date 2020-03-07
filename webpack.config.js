@@ -11,7 +11,7 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: 'main.css',
+            filename: 'dropdown.css',
         })
     ],
     module: {
