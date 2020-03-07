@@ -8,8 +8,12 @@
   },
   "keywords": [
     "React dropdown",
-    "simple React dropdown"
-  ],
+    "Simple React dropdown",
+    "React-component",
+    "Component",
+    "Dropdown",
+    "Select"
+  ],  
   "main": "./lib/Dropdown.js",
   "private": false,
   "license": "MIT",

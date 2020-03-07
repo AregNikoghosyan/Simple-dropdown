@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+
+$ npm i react-dropdown-simple
+
+@import '~react-dropdown-simple/dist/main.css';
 
 ## Available Scripts
 

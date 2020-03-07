@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ClickOutside extends React.Component {
+export default class ClickOutside extends React.Component {
 
   // static propTypes = {
   //   onClickOutside: PropTypes.func.isRequired
@@ -34,7 +34,7 @@ class ClickOutside extends React.Component {
 }
 
 
-class DropDown extends React.Component {
+export default class DropDown extends React.Component {
 
   state = {
     isOpen       : false,
@@ -92,4 +92,3 @@ class DropDown extends React.Component {
   }
 }
 
-export default DropDown;
