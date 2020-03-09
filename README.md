@@ -25,3 +25,13 @@ change = value => this.setState({ Your_State : value });
 <DropDown placeholder="Your_Placeholder" list={options} onSelect={this.change}></DropDown>
 
 ```
+
+## Props
+
+Prop | Type | Description
+------------ | -------------
+list  (required) | object[] | List with the following keys:name, value.
+onSelect  (required) | func | Selecting value
+placeholder | string | Placeholder shown where there are no selected values
+
+
