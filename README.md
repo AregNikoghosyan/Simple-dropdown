@@ -35,3 +35,5 @@ onSelect  (required) | func | Selecting value.
 placeholder | string | Placeholder shown where there are no selected values.
 
 
+=======
+# Simple-dropdown
