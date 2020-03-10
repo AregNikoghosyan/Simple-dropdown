@@ -1,7 +1,7 @@
 {
   "name": "react-dropdown-simple",
   "version": "0.1.22",
-  "description": "Dropdown component for React Js",
+  "description": "Dropdown component for React",
   "author": {
     "name": "Areg Nikoghosyan",
     "email": "aregnikogh@gmail.com"
