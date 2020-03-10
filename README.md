@@ -1,5 +1,7 @@
 ## Installation
 
+[![react-dropdown-simple](https://nodei.co/npm/react-dropdown-simple.png)](https://www.npmjs.com/package/react-dropdown-simple)
+
 ```
 
 $ npm i react-dropdown-simple --save
