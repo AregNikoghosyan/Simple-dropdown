@@ -12,7 +12,8 @@
     "React-component",
     "Component",
     "Dropdown",
-    "Select"
+    "Select",
+    "React-dropdown"
   ],
   "main": "./lib/Dropdown.js",
   "private": false,

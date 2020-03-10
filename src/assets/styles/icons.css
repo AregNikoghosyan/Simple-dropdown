@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'sovats';
   src:  url('../fonts/sovats.eot?j1pi5r');
   src:  url('../fonts/sovats.eot?j1pi5r#iefix') format('embedded-opentype'),
@@ -7,7 +7,7 @@
     url('../fonts/sovats.svg?j1pi5r#sovats') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
