@@ -26,6 +26,10 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AregNikoghosyan/Simple-dropdown.git"
+  },
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^7.1.4",
